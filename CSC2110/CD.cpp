@@ -68,8 +68,8 @@ CD::~CD()
 
 String* CD::getKey()
 {
-   //return artist;
-   return title;
+   return artist;
+   //return title;
 }
 
 void CD::addSong(String* title, String* length)

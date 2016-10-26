@@ -88,7 +88,7 @@ void RadixSort<T>::radixSortAsc(T** sort, int n, int num_chars, char (*getRadixC
 		bin_sort_bin->enqueue(sort[i]);
 	}
 	
-	binSort(bin_sort_bin, 1, num_chars, getRadixChar);  //calls binsort to deal with first character first
+	binSort(bin_sort_bin, 0, num_chars, getRadixChar);  //calls binsort to deal with first character first
 	
 	//puts sorted items back into the array
 	for(int i = 0; i < n; i++)

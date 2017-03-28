@@ -1,3 +1,7 @@
+#if !defined (NULL)
+   #define NULL 0
+#endif
+
 #if !defined (RADIXSORT_H)
 #define RADIXSORT_H
 
@@ -20,6 +24,8 @@ class RadixSort
 			Post:  Sorts the bin recursivly
 		*/
 		static void binSort(QueueLinked<T>* bin, int curr_char, int num_chars, char (*getRadixChar) (T* item, int index));
+		
+		static int asc_index(char rad);
 		
 		/*
 			Pre :  Num items are greater than 0, num_chars greater than 0
@@ -54,20 +60,16 @@ T** RadixSort<T>::radixSort(T** unsorted, int num_to_sort, int num_chars, bool a
 	T** radix_sorted_array = new T*[num_to_sort];  //create a new array for items 
    
     //puts items in new array
-	for(int i = 0; i < num_to_sort; i++)
+	int x = 0;
+	while(x < num_to_sort)
 	{
-		radix_sorted_array[i] = unsorted[i];
+		radix_sorted_array[x] = unsorted[x];
+		x++;
 	}
 	
 	//execute the specified sorting function
-	if(!asc)
-	{
-		radixSortDesc(radix_sorted_array, num_to_sort, num_chars, getRadixChar);
-	}
-	else
-	{
-		radixSortAsc(radix_sorted_array, num_to_sort, num_chars, getRadixChar);		
-	}
+	if(!asc) radixSortDesc(radix_sorted_array, num_to_sort, num_chars, getRadixChar);
+	else radixSortAsc(radix_sorted_array, num_to_sort, num_chars, getRadixChar);		
 	
 	return radix_sorted_array;
 
@@ -77,28 +79,29 @@ template < class T >
 void RadixSort<T>::radixSortAsc(T** sort, int n, int num_chars, char (*getRadixChar) (T* st, int index))
 {
 
-	if(num_chars < 0) return;
-	if(n < 0) return;
+	//if(num_chars < 0 || n < 0 || sort == NULL) return;
 	
 	QueueLinked<T>* bin_sort_bin = new QueueLinked<T>();  //creates a queue for binsort
 	
 	//enqueues all the items in array
-	for(int i = 0; i < n; i++)
+	int x = 0;
+	while(x < n)
 	{
-		bin_sort_bin->enqueue(sort[i]);
+		bin_sort_bin->enqueue(sort[x]);
+		x++;
 	}
 	
-	binSort(bin_sort_bin, 0, num_chars, getRadixChar);  //calls binsort to deal with first character first
+	binSort(bin_sort_bin, 1, num_chars, getRadixChar);  //calls binsort to deal with first character first
 	
 	//puts sorted items back into the array
-	for(int i = 0; i < n; i++)
+	x = 0;
+	while(x < n)
 	{
-		sort[i] = bin_sort_bin->dequeue();
+		sort[x] = bin_sort_bin->dequeue();
+		x++;
 	}
 	
-	
 	delete bin_sort_bin;
-	
 }
 
 template < class T >
@@ -112,38 +115,33 @@ void RadixSort<T>::binSort(QueueLinked<T>* bin, int curr_char, int num_chars, ch
 	QueueLinked<T>** _bin = new QueueLinked<T>*[q_num];  //creates 37 bins of queues
 	
 	//put queues in all 37 bins
-	for(int i = 0; i < q_num; i++)
+	int x = 0;
+	while(x < 37)
 	{
-		_bin[i] = new QueueLinked<T>();
+		_bin[x] = new QueueLinked<T>();
+		x++;
 	}
 	
 	//get items from bin and put them in 37 bins
 	while(!bin->isEmpty())
 	{
-		T* item = bin->dequeue();                            //holds item from the bin
-		char rad_char = (*getRadixChar)(item, curr_char);    //gets radix char 
-		int bin_num = calc_bin_index(rad_char);              //number of bin to be inserted
-		_bin[bin_num]->enqueue(item);                        //put item in queue
+		T* item = bin->dequeue();
+		_bin[asc_index((*getRadixChar)(item, curr_char))]->enqueue(item);
 	}
 	
 	//checks all bins
-	for(int i = 0; i < q_num; i++)
+	x = 0;
+	while(x < q_num)
 	{
-		int bin_size = _bin[i]->size();   //gets size
-		
 		//check for more that one item in bin
-		if(bin_size > 1)
-		{
-			binSort(_bin[i], curr_char + 1, num_chars, getRadixChar);  //recursivly call binsort
-		}
+		if(_bin[x]->size() > 1) binSort(_bin[x], curr_char + 1, num_chars, getRadixChar);  //recursivly call binsort
 		
-		while(!_bin[i]->isEmpty())
+		while(!_bin[x]->isEmpty())
 		{
-			T* item = _bin[i]->dequeue();  //get item(s) from the bin at that index
-			bin->enqueue(item);            //puts sorted items into original bin they came in
+			bin->enqueue(_bin[x]->dequeue()); 
 		}
-		
-		delete _bin[i];  //delete each bin
+		delete _bin[x];  //delete each bin
+		x++;
 	}
 	
 	delete[] _bin;
@@ -152,94 +150,70 @@ void RadixSort<T>::binSort(QueueLinked<T>* bin, int curr_char, int num_chars, ch
 template < class T >
 void RadixSort<T>::radixSortDesc(T** sort, int n, int num_chars, char (*getRadixChar) (T* st, int index))
 {
-	if(num_chars < 0) return;
-	if(n < 0) return;
+	if(num_chars < 0 || n < 0 || sort == NULL) return;
 	
 	int q_num = 37;  //covers letters and digits
 	int counter = 0;
 	
-	QueueLinked<T>** _bin = new QueueLinked<T>*[q_num];  
-	
-	Valtostr* sVal = new Valtostr();      //class object
-	
-	//created strings
-	String* b_str = new String("Bin # ");
-	String* created = new String(" Created!\n");
+	QueueLinked<T>** _bin = new QueueLinked<T>*[37];  
 	
 	//must instantiate each of the queues
-	for (int i = 0; i < q_num; i++)
+	int x = 0;
+	while(x < 37)
 	{
-		_bin[i] = new QueueLinked<T>();
-		
-		/*
-		String* bin_str = new String(sVal->i_to_c(i + 1));
-		b_str->displayString();
-		bin_str->displayString();
-		created->displayString();
-		*/
-		
+		_bin[x] = new QueueLinked<T>();
+		x++;
 	}
 	
 	//go through max number of characters
-	for (int i = num_chars; i > 0; i--)  //number of times to bin stuff
+	x = num_chars;
+	while(x > 0)  //number of times to bin stuff
 	{
 		//put each word in bin
-		for(int k = 0; k < n; k++)
+		int y = 0;
+		while(y < n)
 		{
-			char rad_char = (*getRadixChar)(sort[k],i);
-			int track_place = calc_bin_index(rad_char);
-			_bin[track_place]->enqueue(sort[k]);			
+			_bin[asc_index((*getRadixChar)(sort[y],x))]->enqueue(sort[y]);
+			y++;
 		}
 		
-		counter = 0;  //used for index of the array of items
-		
+		int a = 0;  //used for index of the array of items
+		int z = 36;
 		//take items out of each bin
-		for(int z = 0; z < q_num; z++)
+		while(z >= 0)
 		{
 			//empty each queue
 			while(!_bin[z]->isEmpty())
 			{
-				sort[counter] = _bin[z]->dequeue();
-				counter++;
+				sort[a] = _bin[z]->dequeue();
+				a++;
 			}			
+			z--;
 		}
-
+		x--;
 	}
 
 	//delete the bins
-	for (int i = 0; i < q_num; i++) 
+	x = 0;
+	while (x < 37) 
 	{
-		delete _bin[i];
+		delete _bin[x];
+		x++;
 	}
-	
 	delete[] _bin;
-	
-	//discard these
-	delete sVal;
-	delete b_str;
-	delete created;
 }
 
 template < class T >
-int RadixSort<T>::calc_bin_index(char rad)
+int RadixSort<T>::asc_index(char rad)
 {
-
-	if(rad >= 48 && rad <= 57)          //for numbers
-	{
-		return (rad - 47);
-	}
-	else if(rad >= 65 && rad <= 90)		//for characters
-	{
-		return (rad - 54);
-	}
-	else if(rad >= 97 && rad <= 122)	//for characters
-	{
-		return (rad - 86);
-	}
-	else								//for special characters
-	{
-		return 0;
-	}
+	if(rad >= 48 && rad <= 57) return (rad - 47);
+	else if(rad >= 65 && rad <= 90)	return (rad - 54);
+	else if(rad >= 97 && rad <= 122) return (rad - 86);
+	else return 0;
 }
 
+
 #endif
+
+
+

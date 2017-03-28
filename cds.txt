@@ -1,3 +1,154 @@
+Hour of Penance
+Regicide
+2014
+9
+14
+0:55,Through the Triumphal Arch
+3:29,Reforging the Crown
+3:40,Desecrated Souls
+4:41,Resurgence of the Empire
+3:22,Spheres of Sacred Doom
+3:45,Sealed Into Ecstasy
+4:01,Redeemer of Atrocity
+3:25,Regicide
+3:49,The Sun Worship
+4:49,The Seas of Light
+3:57,Theogony
+3:07,The Uncorrupted Ones
+3:50,Frail As The Flesh Of Christ
+3:11,Monarch Of Heresey
+Man Must Die
+Peace Was Never An Option
+2013
+7
+12
+1:20,Congregation
+5:00,Hiding In Plain Sight
+5:17,Patriot
+5:43,The Hell I Fear
+5:00,Sectarian
+1:25,Dissolution
+5:39,Absence Makes the Hate Grow Stronger
+4:30,The Price You Pay
+3:23,Antisocial Network
+4:38,Abuser Friendly
+4:09,On the Verge of Collapse
+8:37,The Day I Died
+Soreption
+Engineering the Void
+2014
+9
+8
+4:49,Reveal the Unseen
+3:32,The Nature of Blight
+5:59,Breaking the Great Narcissist
+3:40,A Speech to Survival
+4:20,Utopia
+4:01,Monumental Burden
+3:52,I Am You
+4:36,Engineering the Void
+Northern Plague
+Manifesto
+2014
+9
+8
+5:26,Century of Waste
+5:08,Divide Et Impera
+4:07,Reign Mother War
+5:31,Let the World Burn
+3:31,The Edge
+6:01,Legion
+3:15,Unclean Words
+7:39,Manifesto
+Insomnium
+Shadows of the Dying Sun
+2014
+10
+10
+3:16,The Primeval Dark
+6:20,While We Sleep
+5:15,Revelation
+7:03,Black Heart Rebellion
+4:59,Lose To Night
+4:38,Collapsing Words
+7:57,The River
+4:01,Ephemeral
+6:41,The Promethean Song
+6:33,Shadows Of The Dying Sun
+Eternal Tears of Sorrow
+Saivon Lapsi
+2013
+7
+13
+1:10,Saivo
+4:17,Dark Alliance
+4:05,Legion of Beast
+1:01,Kuura
+4:40,Dance of December
+4:14,The Day
+4:15,Sound of Silence
+5:30,Beneath the Frozen Leaves
+4:22,Swan Saivo
+4:06,Blood Stained Sea
+7:30,Angelheart Ravenheart (Act III: Saivon Lapsi)
+0:46,New Dawn
+5:39,Another One Falls Asleep
+Blind Stare
+The Dividing Line
+2012
+6
+11
+3:44,Cold New World
+4:12,Mind's Armor
+4:39,Bring Down the Tears
+5:15,Mindless Dreams
+5:09,Death and Rebirth
+3:28,Blessing of Freyja
+4:34,The List
+7:03,Redemption
+4:22,The Disciple
+4:07,Daughter of the Sun
+4:54,Legion of Lost Minds
+Be'lakor
+The Frail Tide
+2007
+9
+6
+7:40,Neither Shape Nor Shadow
+8:08,The Desolation of Ares
+5:41,Te'aste
+6:38,A Natural Apostasy
+6:03,Paths
+8:40,Sanguinary
+Eternal Tears of Sorrow
+Children of the Dark Waters
+2009
+7
+9
+6:00,Angelheart Ravenheart (Act II: Children of the Dark Waters)
+4:21,Baptized by the Blood of Angels
+4:13,Tears of Autumn Rain
+4:28,Summon the Wild
+4:14,Sea of Whispers
+4:46,Midnight Bird
+4:25,Diary of Demonic Dreams
+2:32,When the Darkest Night Falls
+5:16,Nocturne Thule
+Lay Down Rotten
+Mask Of Malice
+2012
+9
+10
+4:44,Death-Chain
+4:54,A Darker Shade of Hatred
+0:49,Nightfall
+4:29,Mask of Malice
+4:04,... And Out Come the Wolves
+5:30,Swallow the Bitterness
+4:05,Hades Resurrected
+3:41,The Devil Grins
+4:57,La Serpenta Canta
+4:50,The Loss
 Kataklysm
 Waiting for the End to Come
 2013
@@ -92,21 +243,6 @@ Discordia
 2:53,Dystopian Nightmares
 4:27,Discordia
 2:21,Pandemican
-Lay Down Rotten
-Deathspell Catharsis
-2014
-9
-10
-7:14,Cassandra's Haunting
-4:43,Deathspell Catharsis
-5:56,Schadelberg
-5:51,The Fever
-1:06,Release Into Nothingness
-4:32,Zombified Electrified
-5:06,Among the Ruins of a Once Glorious Temple
-4:55,Infernal Agony
-4:26,Blood on Wooden Crosses
-6:05,Blasphemous Rituals for the Perverted Flesh
 Misery Index
 Traitors
 2008
@@ -286,19 +422,6 @@ The Dying Wonders of The World
 4:36,The Option And The Poison
 3:51,Sealed With A Fist
 6:14,I've Only Got Knives For You
-Soreption
-Engineering the Void
-2014
-9
-8
-4:49,Reveal the Unseen
-3:32,The Nature of Blight
-5:59,Breaking the Great Narcissist
-3:40,A Speech to Survival
-4:20,Utopia
-4:01,Monumental Burden
-3:52,I Am You
-4:36,Engineering the Void
 Kalmah
 For The Revolution
 2008
@@ -545,19 +668,6 @@ Across The Dark
 5:08,Into The Woods
 5:51,Weighted Down With Sorrow
 7:15,The New Beginning
-Northern Plague
-Manifesto
-2014
-9
-8
-5:26,Century of Waste
-5:08,Divide Et Impera
-4:07,Reign Mother War
-5:31,Let the World Burn
-3:31,The Edge
-6:01,Legion
-3:15,Unclean Words
-7:39,Manifesto
 Dismember
 Death Metal
 1997
@@ -1217,17 +1327,6 @@ Kalmah
 5:50,12 Gauge
 6:28,Sacramentum
 3:10,Cold Sweat
-Be'lakor
-The Frail Tide
-2007
-9
-6
-7:40,Neither Shape Nor Shadow
-8:08,The Desolation of Ares
-5:41,Te'aste
-6:38,A Natural Apostasy
-6:03,Paths
-8:40,Sanguinary
 3 Inches of Blood
 Battlecry Under A Winter Sun
 2002
@@ -1336,20 +1435,6 @@ A Velvet Creation
 2:36,Once My Eye Moved Mountains
 5:42,Wounded and Alone
 5:56,The Predictable End
-Eternal Tears of Sorrow
-Children of the Dark Waters
-2009
-7
-9
-6:00,Angelheart Ravenheart (Act II: Children of the Dark Waters)
-4:21,Baptized by the Blood of Angels
-4:13,Tears of Autumn Rain
-4:28,Summon the Wild
-4:14,Sea of Whispers
-4:46,Midnight Bird
-4:25,Diary of Demonic Dreams
-2:32,When the Darkest Night Falls
-5:16,Nocturne Thule
 Dying Fetus
 War of Attrition
 2007
@@ -1648,7 +1733,7 @@ An Epic Defiance
 2:17,Lost Euphoria Part II
 4:09,The Last of My Commands
 5:01,Starve
-Spawn of Possession
+Spawn Of Possession
 Cabinet
 2003
 8
@@ -1727,22 +1812,6 @@ We Are The Void
 6:43,Iridium
 2:07,Star of Nothingness
 3:53,To Where Fires Cannot Feed
-Blind Stare
-The Dividing Line
-2012
-6
-11
-3:44,Cold New World
-4:12,Mind's Armor
-4:39,Bring Down the Tears
-5:15,Mindless Dreams
-5:09,Death and Rebirth
-3:28,Blessing of Freyja
-4:34,The List
-7:03,Redemption
-4:22,The Disciple
-4:07,Daughter of the Sun
-4:54,Legion of Lost Minds
 Iced Earth
 The Crucible of Man
 2008
@@ -2093,24 +2162,6 @@ This is Hell
 4:02,Killing My Sleep
 4:28,This Light
 3:53,Di'l Minores
-Arch Enemy
-War Eternal
-2014
-8
-13
-1:12,Tempore Nihil Sanat (Prelude In F Minor)
-3:43,Never Forgive, Never Forget
-4:16,War Eternal
-4:01,As the Pages Burn
-4:05,No More Regrets
-4:37,You Will Know My Name
-1:10,Graveyard of Dreams
-2:58,Stolen Life
-5:23,Time Is Black
-4:04,On And On
-4:38,Avalanche
-3:47,Down To Nothing
-3:38,Not Long For This World
 The Absence
 From Your Grave
 2005
@@ -2658,25 +2709,6 @@ Heaven's Venom
 4:01,Suicide River
 3:24,Das Feuer Lebt (Anthem)
 5:19,Blind Savior
-Hour of Penance
-Regicide
-2014
-9
-14
-0:55,Through the Triumphal Arch
-3:29,Reforging the Crown
-3:40,Desecrated Souls
-4:41,Resurgence of the Empire
-3:22,Spheres of Sacred Doom
-3:45,Sealed Into Ecstasy
-4:01,Redeemer of Atrocity
-3:25,Regicide
-3:49,The Sun Worship
-4:49,The Seas of Light
-3:57,Theogony
-3:07,The Uncorrupted Ones
-3:50,Frail As The Flesh Of Christ
-3:11,Monarch Of Heresey
 Insomnium
 One for Sorrow
 2011
@@ -3410,24 +3442,6 @@ Fate of Norns
 3:22,Beheading of A King
 6:45,Arson
 4:48,Once Sealed In Blood
-Eternal Tears of Sorrow
-Saivon Lapsi
-2013
-7
-13
-1:10,Saivo
-4:17,Dark Alliance
-4:05,Legion of Beast
-1:01,Kuura
-4:40,Dance of December
-4:14,The Day
-4:15,Sound of Silence
-5:30,Beneath the Frozen Leaves
-4:22,Swan Saivo
-4:06,Blood Stained Sea
-7:30,Angelheart Ravenheart (Act III: Saivon Lapsi)
-0:46,New Dawn
-5:39,Another One Falls Asleep
 Insomnium
 Since The Day It All Came Down
 2004
@@ -3507,21 +3521,6 @@ Esoteric
 5:18,Linger in Doubt
 7:21,The Legacy of the Defeated
 3:36,Within Reach
-Allegaeon
-Elements of the Infinite
-2014
-8
-10
-6:06,Threshold of Perception	
-4:18,Tyrants of the Terrestrial Exodus	
-4:47,Dyson Sphere	
-4:18,The Phylogenesis Stretch	
-4:17,1.618	
-5:26,Gravimetric Time Dilation	
-5:05,Our Cosmic Casket	
-5:17,Biomech II	
-5:39,Through Ages of Ice - Otzi's Curse	
-12:49,Genocide For Praise - Vals For The Vitruvian Man
 Children of Bodom
 Hatebreeder
 1999
@@ -3571,21 +3570,6 @@ Follow The Reaper
 3:38,Hellion
 3:00,Shot In The Dark
 3:25,Don't Stop At The Top
-Insomnium
-Shadows of the Dying Sun
-2014
-10
-10
-3:16,The Primeval Dark
-6:20,While We Sleep
-5:15,Revelation
-7:03,Black Heart Rebellion
-4:59,Lose To Night
-4:38,Collapsing Words
-7:57,The River
-4:01,Ephemeral
-6:41,The Promethean Song
-6:33,Shadows Of The Dying Sun
 Testament
 The Gathering
 1999
@@ -3660,21 +3644,6 @@ Seventh Swamphony
 4:35,Wolves On A Throne
 4:45,Black Marten's Trace
 6:03,The Trapper
-Lay Down Rotten
-Mask of Malice
-2012
-9
-10
-4:44,Death-Chain
-4:54,A Darker Shade of Hatred
-0:49,Nightfall
-4:29,Mask of Malice
-4:04,... And Out Come the Wolves
-5:30,Swallow the Bitterness
-4:05,Hades Resurrected
-3:41,The Devil Grins
-4:57,La Serpenta Canta
-4:50,The Loss
 Carnal Forge
 The More You Suffer
 2003
@@ -4765,23 +4734,6 @@ Communicate The Storms
 3:57,Project Life Collapse
 5:32,The Failure Starts
 1:34,The Universe On Hold
-Man Must Die
-Peace Was Never An Option
-2013
-7
-12
-1:20,Congregation
-5:00,Hiding In Plain Sight
-5:17,Patriot
-5:43,The Hell I Fear
-5:00,Sectarian
-1:25,Dissolution
-5:39,Absence Makes the Hate Grow Stronger
-4:30,The Price You Pay
-3:23,Antisocial Network
-4:38,Abuser Friendly
-4:09,On the Verge of Collapse
-8:37,The Day I Died
 Evocation
 Dead Calm Chaos
 2008

@@ -4,6 +4,8 @@
 ::if [%1] == [] goto noArgs
 ::goto yesArgs
 
+del RadixSortDriver.o
+
 :noArgs
 set DRIVE_LETTER=%CD:~0,2%
 goto continue
